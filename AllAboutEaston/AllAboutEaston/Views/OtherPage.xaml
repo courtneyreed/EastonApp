@@ -44,7 +44,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="All about Easton... !" />
+                                <Span Text="All about Easton Game Over... !" />
                                 <Span Text=" " />
                                 <Span Text="Xamarin Platform" FontAttributes="Bold" />
                                 <Span Text="." />
