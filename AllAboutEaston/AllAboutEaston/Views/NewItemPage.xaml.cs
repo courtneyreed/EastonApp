@@ -20,7 +20,7 @@ namespace AllAboutEaston.Views
             Item = new Item
             {
                 Text = "Item name",
-                Description = "This is an item description."
+                Description = "This is the home page."
             };
 
             BindingContext = this;
