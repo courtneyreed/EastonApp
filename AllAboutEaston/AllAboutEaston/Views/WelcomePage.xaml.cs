@@ -9,11 +9,11 @@ using AllAboutEaston.Models;
 namespace AllAboutEaston.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NewItemPage : ContentPage
+    public partial class WelcomePage : ContentPage
     {
         public Item Item { get; set; }
 
-        public NewItemPage()
+        public WelcomePage()
         {
             InitializeComponent();
 
