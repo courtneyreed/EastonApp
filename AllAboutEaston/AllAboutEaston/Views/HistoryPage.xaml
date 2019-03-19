@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AllAboutEaston.Views.OtherPage"
+             xmlns:vm="clr-namespace:AllAboutEaston.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatibile with Xamarin Live Player -->
+            <Color x:Key="Primary">#D11717</Color>
+            <Color x:Key="Accent">#DC143C</Color>
+            <Color x:Key="LightTextColor">#FFFFFF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="history.jpg" VerticalOptions="Center" HeightRequest="150" WidthRequest="700" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Beginnings" FontAttributes="Bold" FontSize="22" />
+                                <Span Text=" " />
+                                <Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="In 1736 Thomas Penn, son of William Penn, and Benjamin Eastburn, Surveyor General, selected and surveyed the 'Thousand Acre Tract' of land at the confluence of the Delaware and Lehigh Rivers. William Parsons and Nicholas Scull began their survey for a town in the 1750s at a spot called by the Indians 'Lechanwitauk' or 'the Place at the Forks.' The new town was to be called 'Easton' in the new county of 'Northampton', after Thomas Penn's wife Juliana Fermor's home estate of Easton-Neston, Northamptonshire, England. The Great Square (now known as Centre Square) was, and remains, a gathering place for residents and travelers. In fact, on July 8, 1776, the square was the site for one of only three public readings of the Declaration of Independence. This historic event is celebrated each year on Heritage Day, when thousands gather to join in reenactments of the reading and to revel in entertainment, good food, and fireworks over the Delaware and Lehigh Rivers." FontSize="12" />
+                                <Span Text=" " />
+
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Eastons Canals"  FontAttributes="Bold" FontSize="22" />
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="With the completion of the Lehigh Canal in 1829, the lands along the Lehigh River attracted great industrial development. The movement of coal brought capital and investment to Easton. All along Canal Street was built one of the largest industrial manufacturing centers of America during the 1830s and 40s. Easton continued to prosper as a center for industry, manufacturing, commerce, and culture at the Forks of the Delaware and along the great rail lines. " FontSize="12" />
+                                <Span Text=" " />
+
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="The First United Church of Christ"  FontAttributes="Bold" FontSize="22" />
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="The First United Church of Christ, at North Third and Church Streets, was built in 1775. The brick portions were designed by Thomas Walter, architect of the dome of the United States Capital. During the Revolutionary war, this church served as a hospital and was visited by George Washington. It was also the site of the Indian Peace Treaty Conference of 1777. The church has a Star of David in honor of Meyer Hart, Easton's first Jewish citizen and a contributor to the original church building fund. The church archives include a hand illustrated Schlatter Bible printed in Switzerland in 1747, and the pewter communion set from 1746. The church congregation's office building, on Church and Sitgreaves Streets, dates from 1778, and was originally Easton's second school building." FontSize="12" />
+                                <Span Text=" " />
+
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="10,10,10,10" Text="Learn more and Link to Source" Command="{Binding OpenWebCommand}" BackgroundColor="{StaticResource Primary}" TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
