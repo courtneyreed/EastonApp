@@ -103,6 +103,9 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bankst.jpg" />
+    <Content Include="history.jpg" />
+    <Content Include="DowntownEaston.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
@@ -146,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllAboutEaston\AllAboutEaston.csproj">
