@@ -25,7 +25,19 @@
                 <views:OtherPage />
             </x:Arguments>
         </NavigationPage>
-        
+
+        <NavigationPage Title="Places To Stay">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:placesToStay />
+            </x:Arguments>
+        </NavigationPage>
+
+
         <NavigationPage Title="About">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
