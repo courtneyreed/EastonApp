@@ -45,7 +45,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="10,10,10,10" Text="Link to Website" Command="{Binding OpenHotelOne}" BackgroundColor="DarkRed" TextColor="White" />
+                <Button Margin="10,10,10,10" Text="Grand Eastonian Website" Command="{Binding OpenHotelOne}" BackgroundColor="DarkRed" TextColor="White" />
 
 
                 <Label>
@@ -88,7 +88,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="10,10,10,10" Text="Link to Website" Command="{Binding OpenHotelTwo}" BackgroundColor="IndianRed" TextColor="White" />
+                <Button Margin="10,10,10,10" Text="Lafayette Inn Website" Command="{Binding OpenHotelTwo}" BackgroundColor="IndianRed" TextColor="White" />
 
 
                 <Label>
@@ -131,7 +131,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="10,10,10,10" Text="Link to Website" Command="{Binding OpenHotelThree}" BackgroundColor="OrangeRed" TextColor="White" />
+                <Button Margin="10,10,10,10" Text="Choice Hotels for Quality Inn" Command="{Binding OpenHotelThree}" BackgroundColor="OrangeRed" TextColor="White" />
             
             
  

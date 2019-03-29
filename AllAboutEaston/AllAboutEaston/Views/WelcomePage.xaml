@@ -9,9 +9,8 @@
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="Welcome to Easton, Pennsylvania!"  HorizontalOptions="CenterAndExpand" FontSize="Large" />
-            
             <Image Source="DowntownEaston.jpg" WidthRequest="300" HeightRequest="300"/>
-            <Editor Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
+            <Label Text="Your ultimate guide to navigating Easton Pennsylvania"  HorizontalOptions="CenterAndExpand" FontSize="20" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
