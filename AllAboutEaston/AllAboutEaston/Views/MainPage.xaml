@@ -28,6 +28,17 @@
 
         <NavigationPage Title="Places To Stay">
             <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="Fi leImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:placesToStay />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Things To Do">
+            <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_about.png"/>
                 </OnPlatform>
@@ -36,6 +47,7 @@
                 <views:placesToStay />
             </x:Arguments>
         </NavigationPage>
+
 
 
         <NavigationPage Title="About">
@@ -48,5 +60,6 @@
                 <views:AboutPage />
             </x:Arguments>
         </NavigationPage>
+        
     </TabbedPage.Children>
 </TabbedPage>
