@@ -28,7 +28,7 @@
 
         <NavigationPage Title="Places To Stay">
             <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="Fi leImageSource">
+                <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_about.png"/>
                 </OnPlatform>
             </NavigationPage.Icon>
@@ -44,7 +44,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:placesToStay />
+                <views:ThingsToDo />
             </x:Arguments>
         </NavigationPage>
 

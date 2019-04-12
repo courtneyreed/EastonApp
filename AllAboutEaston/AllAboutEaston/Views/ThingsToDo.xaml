@@ -1,13 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AllAboutEaston.Views.Page1">
+             x:Class="AllAboutEaston.Views.ThingsToDo">
     <ContentPage.Content>
-        
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                
+                
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="" BackgroundColor="red"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="" BackgroundColor="PaleVioletRed"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="" BackgroundColor="MediumVioletRed"/>
+            <Label Grid.Row="1" Grid.Column="0"  Text="" BackgroundColor="PaleVioletRed"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="" BackgroundColor="MediumVioletRed"/>
+            <Label Grid.Row="1" Grid.Column="2" Text="" BackgroundColor="IndianRed"/>
+            <Label Grid.Row="2" Grid.Column="0" Text="" BackgroundColor="MediumVioletRed"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="" BackgroundColor="IndianRed"/>
+            <Label Grid.Row="2" Grid.Column="2" Text="" BackgroundColor="Red"/>
+          
+
+
+           
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
