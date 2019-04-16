@@ -5,28 +5,88 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
                 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 
                 
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="0" Grid.Column="0" Text="" BackgroundColor="red"/>
-            <Label Grid.Row="0" Grid.Column="1" Text="" BackgroundColor="PaleVioletRed"/>
-            <Label Grid.Row="0" Grid.Column="2" Text="" BackgroundColor="MediumVioletRed"/>
-            <Label Grid.Row="1" Grid.Column="0"  Text="" BackgroundColor="PaleVioletRed"/>
-            <Label Grid.Row="1" Grid.Column="1" Text="" BackgroundColor="MediumVioletRed"/>
-            <Label Grid.Row="1" Grid.Column="2" Text="" BackgroundColor="IndianRed"/>
-            <Label Grid.Row="2" Grid.Column="0" Text="" BackgroundColor="MediumVioletRed"/>
-            <Label Grid.Row="2" Grid.Column="1" Text="" BackgroundColor="IndianRed"/>
-            <Label Grid.Row="2" Grid.Column="2" Text="" BackgroundColor="Red"/>
+            <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" BackgroundColor="red">
+                <Label.Text>
+                  Crayola Experince
+                    
+Roomy, crayon-centric warehouse with colorful kid-friendly activities, events, a cafe and a store
+                </Label.Text>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenCrayola}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand" BackgroundColor="PaleVioletRed">
+            <Label.Text>
+                    National Canal Museum
+                
+The National Canal Museum is the Signature Program of the Delaware and Lehigh National Heritage Corridor
+            </Label.Text>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OpenCanal}"/>
+            </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="CenterAndExpand" BackgroundColor="MediumVioletRed">
+                <Label.Text>
+                    Delaware River Railroad Excursions
+                
+Take a old time train ride around the Delaware River area. 
+                </Label.Text>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenTrain}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand" BackgroundColor="PaleVioletRed">
+            <Label.Text>
+                    Sigal Museum and Northampton County Historical and Genealogical Society
+                
+Resource for artifacts from pre-European settlers, decorative arts, textiles, tools and furniture.
+            </Label.Text>
+            <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenSignal}"/>
+            </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand" BackgroundColor="MediumVioletRed">
+            <Label.Text>
+                    Centre Square
+                
+Center square of the City of Easton with shops, resturants, and a historical monument. 
+            </Label.Text>
+            <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenSquare}"/>
+            </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="1" Grid.Column="2" HorizontalOptions="CenterAndExpand" BackgroundColor="IndianRed">
+            <Label.Text>
+                    Bushkill Park
+                
+A small amusement park, generally geared toward younger audiences, although most of it is not currently open.
+            </Label.Text>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OpenPark}"/>
+            </Label.GestureRecognizers>
+            </Label>
+
+            <Label Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" BackgroundColor="MediumVioletRed"/>
+            <Label Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" BackgroundColor="IndianRed"/>
+            <Label Grid.Row="2" Grid.Column="2" HorizontalOptions="CenterAndExpand" BackgroundColor="Red"/>
           
 
 
