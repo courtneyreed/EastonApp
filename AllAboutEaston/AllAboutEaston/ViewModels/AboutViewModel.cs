@@ -9,9 +9,10 @@ namespace AllAboutEaston.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "Map";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://www.easton-pa.com/history.html")));
+            
         }
 
         public ICommand OpenWebCommand { get; }

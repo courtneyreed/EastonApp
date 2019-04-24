@@ -11,6 +11,11 @@ namespace AllAboutEaston.Views
         public AboutPage()
         {
             InitializeComponent();
+
+
+
+            var website = "https://goo.gl/maps/HgFmNCzoG3jLiGC36";
+            Browser.Source = website;
         }
     }
 }
